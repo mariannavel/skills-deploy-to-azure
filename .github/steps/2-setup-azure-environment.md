@@ -49,14 +49,13 @@ We won't be going into detail on the steps of this workflow, but it would be a g
 
     > **Note**: The `\` character works as a line break on Unix based systems. If you are on a Windows based system the `\` character will cause this command to fail. Place this command on a single line if you are using Windows.
 
-1.  Copy the entire contents of the command's response, we'll call this `AZURE_CREDENTIALS`. Here's an example of what it looks like:
+1.  Copy the entire contents of the command's response, we'll call this `AZURE_CREDENTIALS`. It must be valid JSON; do not include the code fences or any placeholder text shown in this example.
     ```shell
     {
       "clientId": "<GUID>",
       "clientSecret": "<GUID>",
       "subscriptionId": "<GUID>",
-      "tenantId": "<GUID>",
-      (...)
+      "tenantId": "<GUID>"
     }
     ```
 1.  Back on GitHub, click on this repository's **Secrets and variables > Actions** in the Settings tab.
